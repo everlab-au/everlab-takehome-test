@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    container_name: pathology-report-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: pathology_report_db
+      POSTGRES_USER: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - ./data:/docker-entrypoint-initdb.d
+    networks:
+      - network1
+
+  nodejs_app:
+    build:
+      context: ./svc-condition-report
+      dockerfile: Dockerfile
+    container_name: pathology-report-nodejs
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    networks:
+      - network1
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_NAME: pathology_report_db
+
+networks:
+  network1:
+    driver: bridge
