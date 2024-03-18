@@ -48,3 +48,7 @@ to run the project in development mode you can run the following commands:
 - drizzle
 - sqlite
 - some other libraries
+## some preview of the app 
+![image](https://github.com/Kampouse/everlab-takehome-test/assets/41765025/510f995d-4572-4e12-8cea-de100cd276f2)
+![image](https://github.com/Kampouse/everlab-takehome-test/assets/41765025/4954de48-2dfc-44fe-a4d2-ee0ccabf20c1)
+
