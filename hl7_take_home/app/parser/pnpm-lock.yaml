@@ -1,0 +1,68 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  csv:
+    specifier: ^6.3.6
+    version: 6.3.6
+  csv-parser:
+    specifier: ^3.0.0
+    version: 3.0.0
+
+devDependencies:
+  '@types/node':
+    specifier: ^20.11.17
+    version: 20.11.17
+
+packages:
+
+  /@types/node@20.11.17:
+    resolution: {integrity: sha512-QmgQZGWu1Yw9TDyAP9ZzpFJKynYNeOvwMJmaxABfieQoVoiVOS6MN1WSpqpRcbeA5+RW82kraAVxCCJg+780Qw==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /csv-generate@4.3.1:
+    resolution: {integrity: sha512-7YeeJq+44/I/O5N2sr2qBMcHZXhpfe38eh7DOFxyMtYO+Pir7kIfgFkW5MPksqKqqR6+/wX7UGoZm1Ot11151w==}
+    dev: false
+
+  /csv-parse@5.5.3:
+    resolution: {integrity: sha512-v0KW6C0qlZzoGjk6u5tLmVfyZxNgPGXZsWTXshpAgKVGmGXzaVWGdlCFxNx5iuzcXT/oJN1HHM9DZKwtAtYa+A==}
+    dev: false
+
+  /csv-parser@3.0.0:
+    resolution: {integrity: sha512-s6OYSXAK3IdKqYO33y09jhypG/bSDHPuyCme/IdEHfWpLf/jKcpitVFyOC6UemgGk8v7Q5u2XE0vvwmanxhGlQ==}
+    engines: {node: '>= 10'}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.8
+    dev: false
+
+  /csv-stringify@6.4.5:
+    resolution: {integrity: sha512-SPu1Vnh8U5EnzpNOi1NDBL5jU5Rx7DVHr15DNg9LXDTAbQlAVAmEbVt16wZvEW9Fu9Qt4Ji8kmeCJ2B1+4rFTQ==}
+    dev: false
+
+  /csv@6.3.6:
+    resolution: {integrity: sha512-jsEsX2HhGp7xiwrJu5srQavKsh+HUJcCi78Ar3m4jlmFKRoTkkMy7ZZPP+LnQChmaztW+uj44oyfMb59daAs/Q==}
+    engines: {node: '>= 0.1.90'}
+    dependencies:
+      csv-generate: 4.3.1
+      csv-parse: 5.5.3
+      csv-stringify: 6.4.5
+      stream-transform: 3.3.0
+    dev: false
+
+  /minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+    dev: false
+
+  /stream-transform@3.3.0:
+    resolution: {integrity: sha512-pG1NeDdmErNYKtvTpFayrEueAmL0xVU5wd22V7InGnatl4Ocq3HY7dcXIKj629kXvYQvglCC7CeDIGAlx1RNGA==}
+    dev: false
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
